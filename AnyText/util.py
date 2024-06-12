@@ -5,14 +5,18 @@ class AnyText_Kevin:
   @classmethod
   def INPUT_TYPES( cls ):
     return {
-      "required": {}
+      "required": {
+        "text1": ("STRING", { "default": 'Kevin' }),
+        "text2": ("STRING", {"forceInput": True} )
+      }
     }
 
-  RETURN_TYPES = {}
-  RETURN_NAMES = {}
+  RETURN_TYPES = ("IMAGE",)
+  RETURN_NAMES = ("image_output_name",)
   FUNCTION = "test"
+  TITLE = "AnyText-Kevin"
 
-  CATEGORY = "image/AnyText_kevin"
+  CATEGORY = "kevin/AnyText_kevin"
 
   def test( self ):
     return "test"
@@ -22,5 +26,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-  "FirstNode": "My first node"
+    "AnyText_Kevin": "AnyText_Kevin"
 }
