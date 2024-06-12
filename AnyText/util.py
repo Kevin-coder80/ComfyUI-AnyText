@@ -12,11 +12,10 @@ class AnyText_Kevin:
     }
 
   RETURN_TYPES = ("IMAGE",)
-  RETURN_NAMES = ("image_output_name",)
   FUNCTION = "test"
   TITLE = "AnyText-Kevin"
 
-  CATEGORY = "kevin/AnyText_kevin"
+  CATEGORY = "AnyText-kevin"
 
   def test( self ):
     return "test"
@@ -26,5 +25,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "AnyText_Kevin": "AnyText_Kevin"
+    "AnyText_Kevin": "AnyText-Kevin"
 }
